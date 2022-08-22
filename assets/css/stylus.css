@@ -1,2 +1,73 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
+:root {
+    --dark-text: hsl(229, 25%, 31%);
+    --font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: hsl(214, 47%, 23%);
+    font-weight: 600;
+}
+
+.header__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 1.5rem;
+    padding: 1rem;
+    border: solid hsl(217, 16%, 45%) 2px;
+    border-radius: 8px;
+
+}
+
+.header__title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 0.85;
+
+
+}
+
+.header__score {
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.score__title {
+    text-transform: uppercase;
+    display: block;
+    font-size: 10px;
+    color: hsl(229, 64%, 46%);
+    margin-bottom: 2px;
+
+}
+
+.score__number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark-text);
+    letter-spacing: -3px;
+    
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
