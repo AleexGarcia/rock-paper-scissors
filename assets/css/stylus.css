@@ -9,7 +9,8 @@ body {
     font-family: var(--font-family);
     background-color: hsl(214, 47%, 23%);
     font-weight: 600;
-
+    color: #fff;
+    height: calc(100vh - 2rem);
 }
 
 .header__box {
@@ -26,7 +27,6 @@ body {
 
 .header__title {
     text-transform: uppercase;
-    color: #fff;
     font-size: 1.25rem;
     line-height: 0.85;
 
@@ -65,11 +65,11 @@ body {
 
 .main {
     margin: 0 2rem;
-    height: 100vh;
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: center;
+   justify-content: space-evenly;
+   height: 70%;
 }
 
 .choices {
@@ -87,6 +87,7 @@ body {
 }
 
 .circle {
+    border: solid 1rem;
     border-radius: 50%;
     background-color: #fff;
     width: 100px;
@@ -95,37 +96,100 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .choices__paper {
-    border: solid hsl(230, 89%, 62%) 1rem;
-
+    
+    border-color: hsl(230, 89%, 65%) ;
+    box-shadow: 0px 5px hsl(230, 89%, 62%);
 }
 
 .choices__scissors {
-    border: solid hsl(39, 89%, 49%) 1rem;
-
+    border-color: hsl(40, 84%, 53%);
+    box-shadow: 0px 5px hsl(39, 84%, 49%);
 }
 
 .choices__rock {
-    border: solid hsl(349, 71%, 52%) 1rem;
+    border-color: hsl(349, 70%, 56%);
+    box-shadow: 0px 5px hsl(349, 71%, 52%);
     grid-column: 1 / 3;
 }
 .footer{
     text-align: center;
 }
 .footer__rules{
-    padding: 1rem;
+    padding: .5rem 2rem;
+    color: #fff;
     background-color: transparent;
     text-decoration: none;
     text-transform: uppercase;
-    color: #fff;
     font-size: 1.5rem;
     border: solid #fff 2px;
     border-radius: 1rem;
     
 }
+.picks{
+    display: flex;
+    gap: 2rem;
+
+}
+.pick{
+    text-align: center;
+    text-transform: uppercase;
+}
+.pick__span{
+    margin-top: 1rem;
+}
+.result{
+    
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.result__span{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+}
+.result__button{
+    padding: .75rem;
+    color: var(--dark-text);
+    font-family: var(--font-family);
+    text-transform: uppercase;
+    font-size: 1.0rem;
+    border-radius: 8px;
+    border: none;
+}
+
+.rules{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    background-color: #fff;
+    height: 100vh;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.rules__title{
+    color: var(--dark-text);
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+.rules__button{
+    border: none;
+    padding: 8px;
+    background: transparent;
+    font-size: 2rem;
+    color: var(--dark-text);
+}
+.oculto{
+    display: none;
+}
 .attribution {
+    
     font-size: 11px;
     text-align: center;
     margin-top: 2rem;
