@@ -33,27 +33,19 @@
     </div>
   </header>
   <main class="main">
-    <section class="choices">
-      <div class="choices__paper circle">
-        <img class="paper__img" src="./assets/img/icon-paper.svg" alt="">
-      </div>
-      <div class="choices__scissors circle">
-        <img class="scissors__img" src="./assets/img/icon-scissors.svg" alt="">
-      </div>
-      <div class="choices__rock circle">
-        <img class="rock__img" src="./assets/img/icon-rock.svg" alt="">
-      </div>
+    <section class="choices" id="choices">
+      <div class="choices__paper circle" data-type="paper"></div>
+      <div class="choices__scissors circle" data-type="scissors"></div>
+      <div class="choices__rock circle" data-type="rock"></div>
     </section>
     <section class="picks oculto">
       <div class="pick">
         <div class="choices__paper circle">
-          <img class="paper__img" src="./assets/img/icon-paper.svg" alt="">
         </div>
         <span class="pick__span">You picked</span>
       </div>
       <div class="pick">
         <div class="choices__scissors circle">
-          <img class="scissors__img" src="./assets/img/icon-scissors.svg" alt="">
         </div>
         <span class="pick__span">The house picked</span>
       </div>
@@ -76,6 +68,7 @@
     </div>
   </footer>
   <script src="assets/app/rules.js"></script>
+  <script src="assets/app/sorteio.js"></script>
 </body>
 
 </html>
