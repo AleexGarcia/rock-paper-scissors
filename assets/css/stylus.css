@@ -65,11 +65,11 @@ body {
 
 .main {
     margin: 0 2rem;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: space-evenly;
-   height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70%;
 }
 
 .choices {
@@ -83,7 +83,7 @@ body {
     grid-template-rows: 120px 120px;
     justify-items: center;
     column-gap: 2.5rem;
-   row-gap: 1rem;
+    row-gap: 1rem;
 }
 
 .circle {
@@ -100,8 +100,8 @@ body {
 }
 
 .choices__paper {
-    
-    border-color: hsl(230, 89%, 65%) ;
+
+    border-color: hsl(230, 89%, 65%);
     box-shadow: 0px 5px hsl(230, 89%, 62%);
 }
 
@@ -115,10 +115,12 @@ body {
     box-shadow: 0px 5px hsl(349, 71%, 52%);
     grid-column: 1 / 3;
 }
-.footer{
+
+.footer {
     text-align: center;
 }
-.footer__rules{
+
+.footer__rules {
     padding: .5rem 2rem;
     color: #fff;
     background-color: transparent;
@@ -127,31 +129,37 @@ body {
     font-size: 1.5rem;
     border: solid #fff 2px;
     border-radius: 1rem;
-    
+
 }
-.picks{
+
+.picks {
     display: flex;
     gap: 2rem;
 
 }
-.pick{
+
+.pick {
     text-align: center;
     text-transform: uppercase;
 }
-.pick__span{
+
+.pick__span {
     margin-top: 1rem;
 }
-.result{
-    
+
+.result {
+
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
 }
-.result__span{
+
+.result__span {
     text-transform: uppercase;
     font-size: 3.5rem;
 }
-.result__button{
+
+.result__button {
     padding: .75rem;
     color: var(--dark-text);
     font-family: var(--font-family);
@@ -161,7 +169,7 @@ body {
     border: none;
 }
 
-.rules{
+.rules {
     position: absolute;
     top: 0;
     width: 100vw;
@@ -173,23 +181,28 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
 }
-.rules__title{
+
+.rules__title {
     color: var(--dark-text);
     text-transform: uppercase;
     font-size: 3rem;
 }
-.rules__button{
+
+.rules__button {
     border: none;
     padding: 8px;
     background: transparent;
     font-size: 2rem;
     color: var(--dark-text);
+    cursor: pointer;
 }
-.oculto{
+
+.oculto {
     display: none;
 }
+
 .attribution {
-    
+
     font-size: 11px;
     text-align: center;
     margin-top: 2rem;
