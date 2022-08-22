@@ -1,5 +1,9 @@
-choices = document.querySelector("#choices");
+const options = document.querySelectorAll("#choices div");
+optionArray = []
+options.forEach(element =>{
+    optionArray.push(element.dataset.type);
+});
+function sorteio(){
+    return optionArray[parseInt(Math.random()*3)]
+}
 
-choices.addEventListener('click',(evento)=>{
-    return console.log(evento.target.dataset)
-})
