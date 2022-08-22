@@ -92,10 +92,6 @@ body {
     background-color: #fff;
     width: 100px;
     height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 1rem;
     background-repeat: no-repeat;
     background-size: auto;
@@ -189,7 +185,11 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
+
+
+
 }
+.rules[class="oculto"]
 
 .rules__title {
     color: var(--dark-text);

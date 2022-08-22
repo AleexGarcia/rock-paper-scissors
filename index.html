@@ -28,7 +28,7 @@
       <span class="header__title">Pedra<br>Papel<br>Tesoura</span>
       <div class="header__score">
         <span class="score__title">Score</span>
-        <span class="score__number">12</span>
+        <span class="score__number"  id="score">12</span>
       </div>
     </div>
   </header>
@@ -38,15 +38,13 @@
       <div class="choices__scissors circle" data-type="scissors"></div>
       <div class="choices__rock circle" data-type="rock"></div>
     </section>
-    <section class="picks oculto">
+    <section class="picks oculto" id="picks">
       <div class="pick">
-        <div class="choices__paper circle">
-        </div>
+        <div class="choices__paper circle" data-type="myPick"></div>
         <span class="pick__span">You picked</span>
       </div>
       <div class="pick">
-        <div class="choices__scissors circle">
-        </div>
+        <div class="choices__rock circle" data-type="machinePick"></div>
         <span class="pick__span">The house picked</span>
       </div>
     </section>
@@ -67,8 +65,10 @@
       Coded by <a href="#">Alexandre Garcia</a>.
     </div>
   </footer>
-  <script src="assets/app/rules.js"></script>
+  <script src="assets/app/exibe_rules.js"></script>
+  <script src="assets/app/escolha.js"></script>
   <script src="assets/app/sorteio.js"></script>
+  <script src="assets/app/logica_game.js"></script>
 </body>
 
 </html>
