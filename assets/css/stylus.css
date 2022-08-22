@@ -172,6 +172,7 @@ body {
     font-size: 1.0rem;
     border-radius: 8px;
     border: none;
+    cursor: pointer;
 }
 
 .rules {
@@ -189,7 +190,6 @@ body {
 
 
 }
-.rules[class="oculto"]
 
 .rules__title {
     color: var(--dark-text);

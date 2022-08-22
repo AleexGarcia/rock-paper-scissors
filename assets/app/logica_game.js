@@ -1,6 +1,6 @@
  score = 0;
  scoreHtml = document.querySelector('#score');
-
+ resultHtml = document.querySelector('#result')
 function analisaResultado(escolha,escolhaMaquina){
     if (escolha === 'paper'){
         if(escolhaMaquina ==='rock'){
@@ -34,8 +34,20 @@ function analisaResultado(escolha,escolhaMaquina){
     return scoreAux;
 }
 
+function exibeResultado(scoreAux){
+    let resultado = document.querySelector('#result_span');
+    
+    if(scoreAux > 0){
+        resultado.textContent = 'You win';
+    }else if(scoreAux < 0){
+        resultado.textContent = 'You Lose';
+    }else{
+        resultado.textContent = 'Draw';
+    }
 
+    resultHtml.classList.remove('oculto');
+}
 
 function exibeScore(score){
-
+    scoreHtml.textContent = score;
 }

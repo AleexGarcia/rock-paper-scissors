@@ -3,13 +3,13 @@ const picks = document.querySelector('#picks')
 
 choices.addEventListener('click', evento => {
     escolha = evento.target.dataset.type;
-    console.log(escolha);
     escolhaMaquina = sorteio();
-    console.log(escolhaMaquina);
 
     if(escolha != null && escolhaMaquina != null){
         exibeEscolhas(escolha,escolhaMaquina);
-        console.log(analisaResultado(escolha,escolhaMaquina));
+      let resultado = analisaResultado(escolha,escolhaMaquina);
+        exibeResultado(resultado);
+        exibeScore(score)
     }
 
 });
