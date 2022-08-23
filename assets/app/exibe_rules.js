@@ -5,5 +5,6 @@ rules_button.addEventListener("click",()=>{
     rules_section.classList.remove('oculto');
 })
 rules_close.addEventListener("click",()=>{
+    
     rules_section.classList.add('oculto');
 })
