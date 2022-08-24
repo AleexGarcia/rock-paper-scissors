@@ -40,6 +40,7 @@ function exibeResultado(scoreAux){
     
     if(scoreAux > 0){
         resultado.textContent = 'You win';
+        
     }else if(scoreAux < 0){
         resultado.textContent = 'You Lose';
     }else{
@@ -51,8 +52,20 @@ function exibeResultado(scoreAux){
 }
 
 function exibeScore(score){
-    scoreHtml.textContent = score;
+    setTimeout(()=> scoreHtml.textContent = score, 3500) ;
 }
 
-pick__machine = document.querySelector('.picks__machine');
-pick__you = documento.querySelector('.picks__you')
+const auraYou = document.querySelector('#aura_you');
+const auraMachine = document.querySelector('#aura_machine');
+
+function exibeAura(resultado){
+   
+  setTimeout(()=>{
+      if(resultado === 1){
+          auraYou.classList.add('aura')
+      }
+      if(resultado === -1){
+          auraMachine.classList.add('aura')
+      }
+  },3500) 
+}
