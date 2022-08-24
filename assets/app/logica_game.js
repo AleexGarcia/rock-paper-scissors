@@ -46,7 +46,7 @@ function exibeResultado(scoreAux){
         resultado.textContent = 'Draw';
     }
 
-    resultHtml.classList.remove('oculto');
+    setTimeout(()=>resultHtml.classList.remove('oculto'),3000);
     setTimeout(()=> resultHtml.classList.add('opacity'),4000)
 }
 

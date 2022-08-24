@@ -29,19 +29,20 @@
       <div class="choices__rock circle pointed" data-type="rock"></div>
     </section>
     <section class="picks oculto" id="picks">
-      <div class="pick">
+      <div class="picks__you pick">
         <div class="choices__paper circle" data-type="myPick"></div>
         <span class="pick__span">You picked</span>
       </div>
-      <div class="pick">
+      <div class="picks__machine pick">
         <div class="pick__machine circle " data-type="machinePick"></div>
         <span class="pick__span">The house picked</span>
       </div>
+      <div class="result oculto" id="result">
+        <span class="result__span" id="result_span">You win</span>
+        <button class="result__button" id="playAgain">Play Again</button>
+      </div>
     </section>
-    <section class="result oculto" id="result">
-      <span class="result__span" id="result_span">You win</span>
-      <button class="result__button" id="playAgain">Play Again</button>
-    </section>
+    
     <section class="rules oculto" id="rules">
       <h2 class="rules__title">Rules</h2>
       <img src="./assets/img/image-rules.svg" alt="" class="rules__img">
