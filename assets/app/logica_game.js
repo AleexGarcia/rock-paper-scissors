@@ -1,6 +1,11 @@
- score = 0;
  scoreHtml = document.querySelector('#score');
  resultHtml = document.querySelector('#result')
+
+ 
+ score = JSON.parse(localStorage.getItem('score')) || 0;
+ scoreHtml.textContent = score
+
+
 function analisaResultado(escolha,escolhaMaquina){
     if (escolha === 'paper'){
         if(escolhaMaquina ==='rock'){
@@ -30,7 +35,7 @@ function analisaResultado(escolha,escolhaMaquina){
         }
     }
     score += scoreAux;
-    
+    localStorage.setItem('score',JSON.stringify(score))
     return scoreAux;
 }
 
