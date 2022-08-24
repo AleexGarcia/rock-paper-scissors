@@ -1,8 +1,6 @@
 # Frontend Mentor - Rock, Paper, Scissors solution
 
-
 Esta é uma solução para o desafio [Rock, Paper, Scissors no Frontend Mentor](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH). Os desafios do Frontend Mentor ajudam você a melhorar suas habilidades de codificação criando projetos realistas.
-
 
 ## Table of contents
 
@@ -108,4 +106,4 @@ Pretendo continuar aperfeiçoando meus conhecimentos em HTML, CSS E JS. Além de
 ## Autor
 
 - Frontend Mentor - [@AleexGarcia](https://www.frontendmentor.io/profile/AleexGarcia)
-- Linkedin -[alexandre-garcia-dev89]https://www.linkedin.com/in/alexandre-garcia-dev89/
+- Linkedin - [alexandre-garcia-dev89](https://www.linkedin.com/in/alexandre-garcia-dev89/)
