@@ -34,8 +34,9 @@ function analisaResultado(escolha,escolhaMaquina){
     return scoreAux;
 }
 
+let resultado = document.querySelector('#result_span');
+
 function exibeResultado(scoreAux){
-    let resultado = document.querySelector('#result_span');
     
     if(scoreAux > 0){
         resultado.textContent = 'You win';
@@ -46,6 +47,7 @@ function exibeResultado(scoreAux){
     }
 
     resultHtml.classList.remove('oculto');
+    setTimeout(()=> resultHtml.classList.add('opacity'),4000)
 }
 
 function exibeScore(score){
