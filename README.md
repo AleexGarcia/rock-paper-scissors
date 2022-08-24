@@ -4,110 +4,107 @@ This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](h
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
+- [Visão Geral](#Visão-Geral)
+  - [O desafio](#O-desafio)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [Meu processo](#Meu-processo)
+  - [Construi com](#Construi com)
+  - [O que eu aprendi](#O-que-eu-aprendi)
+  - [Desenvolvimento contínuo](#Desenvolvimento-contínuo)
+- [Autor](#Autor)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+## Visão-Geral
 
-## Overview
+### O-desafio
 
-### The challenge
+Os usuários devem ser capazes de:
 
-Users should be able to:
-
-- View the optimal layout for the game depending on their device's screen size
-- Play Rock, Paper, Scissors against the computer
-- Maintain the state of the score after refreshing the browser _(optional)_
-- **Bonus**: Play Rock, Paper, Scissors, Lizard, Spock against the computer _(optional)_
+- Ver o layout ideal para o jogo, dependendo do tamanho da tela do dispositivo.
+- Jogue Pedra, Papel, Tesoura contra o computador
+- Manter o estado da pontuação após atualizar o navegador
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/AleexGarcia/rock-paper-scissors-master#the-challenge)
+- Live Site URL: [Add live site URL here](https://aleexgarcia.github.io/rock-paper-scissors-master/)
 
-## My process
+## Meu-processo
 
-### Built with
+### Construi com
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
-### What I learned
+### O-que-eu-aprendi
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Aprendi a usar o setTimeOut() para criar um transição mais suave entre os elementos exibidos, usar seletor de data-atribute em css, o uso de z-index em elementos flex, uso de gradiente de cores para o background, uso de multiplos shadow-box.
 
-To see how you can add code snippets, see below:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+  [data-type="myPick"],
+    [data-type="machinePick"] {
+        width: 200px;
+        height: 200px;
+        border-width: calc(160px/5);
+        background-size: 33%;
+    }
+
+  .header__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 1.5rem;
+    padding: 1rem;
+    border: solid hsl(217, 16%, 45%) 2px;
+    border-radius: 8px;
+    z-index: 1;
+    position: relative;
+  }
+
+  body {
+    font-family: var(--font-family);
+    background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    font-weight: 600;
+    color: #fff;
+    height: calc(100vh - 2rem);
+  }
 ```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+
+function exibeResultado(scoreAux){
+    
+    if(scoreAux > 0){
+        resultado.textContent = 'You win';
+        
+    }else if(scoreAux < 0){
+        resultado.textContent = 'You Lose';
+    }else{
+        resultado.textContent = 'Draw';
+    }
+
+    setTimeout(()=>resultHtml.classList.remove('oculto'),3000);
+    setTimeout(()=> resultHtml.classList.add('opacity'),3500)
 }
+
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+### Desenvolvimento-contínuo
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+Pretendo continuar aperfeiçoando meus conhecimentos em HTML, CSS E JS. Além de estudar mais sobre a area de front-end e melhorar cada vez mais. A proxima etapa um vez que esteja confortavel com esses assuntos seria consumir o maximo de conteudo sobre REACT com typeScript;
 
-### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
-## Author
+## Autor
 
 - Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
