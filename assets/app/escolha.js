@@ -10,7 +10,7 @@ choices.addEventListener('click', evento => {
         
       let resultado = analisaResultado(escolha,escolhaMaquina);
         exibeResultado(resultado);
-        exibeAura(resultado)
+        exibeAura(resultado);
         exibeScore(score);
     }
 
