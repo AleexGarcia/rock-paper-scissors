@@ -7,7 +7,7 @@
 
 body {
     font-family: var(--font-family);
-    background-color: hsl(214, 47%, 23%);
+    background-image: radial-gradient(hsl(214, 47%, 23%),hsl(237, 49%, 15%));
     font-weight: 600;
     color: #fff;
     height: calc(100vh - 2rem);
@@ -100,7 +100,7 @@ body {
 
 .circle {
 
-    border: solid 1rem;
+    border: solid 1rem ;
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -135,7 +135,7 @@ body {
 
 }
 .pick__machine{
-    border-color: hsl(214, 47%, 23%);
+    border-color: transparent;
     background-color: rgb(26,41,70);
     transition: 1s;
 }

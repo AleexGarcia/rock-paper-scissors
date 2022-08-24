@@ -47,9 +47,12 @@ function exibeResultado(scoreAux){
     }
 
     setTimeout(()=>resultHtml.classList.remove('oculto'),3000);
-    setTimeout(()=> resultHtml.classList.add('opacity'),4000)
+    setTimeout(()=> resultHtml.classList.add('opacity'),3500)
 }
 
 function exibeScore(score){
     scoreHtml.textContent = score;
 }
+
+pick__machine = document.querySelector('.picks__machine');
+pick__you = documento.querySelector('.picks__you')
