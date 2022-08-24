@@ -4,4 +4,5 @@ playAgain.addEventListener('click',()=>{
     picks.classList.add('oculto');
     choices.classList.remove('oculto');
     resultHtml.classList.add('oculto');
+    machinePick.classList.replace(machinePick.classList[0],`pick__machine`)
 })

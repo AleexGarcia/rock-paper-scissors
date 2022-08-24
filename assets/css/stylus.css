@@ -102,7 +102,6 @@ body {
 
     border: solid 1rem;
     border-radius: 50%;
-    background-color: #fff;
     width: 100px;
     height: 100px;
     margin-bottom: 1rem;
@@ -112,29 +111,33 @@ body {
 }
 
 .choices__paper {
-
+    background-color: #fff;
     border-color: hsl(230, 89%, 65%);
     box-shadow: 0px 5px hsl(230, 89%, 62%);
     background-image: url(../img/icon-paper.svg);
-    cursor: pointer;
+   
 }
 
 .choices__scissors {
-
+    background-color: #fff;
     border-color: hsl(40, 84%, 53%);
     box-shadow: 0px 5px hsl(39, 84%, 49%);
     background-image: url(../img/icon-scissors.svg);
-    cursor: pointer;
+   
 }
 
 .choices__rock {
-
+    background-color: #fff;
     border-color: hsl(349, 70%, 56%);
     box-shadow: 0px 5px hsl(349, 71%, 52%);
     background-image: url(../img/icon-rock.svg);
-    cursor: pointer;
     grid-column: 1 / 3;
 
+}
+.pick__machine{
+    border-color: hsl(214, 47%, 23%);
+    background-color: rgb(26,41,70);
+    transition: 1s;
 }
 
 .footer {
@@ -158,6 +161,7 @@ body {
 
     display: flex;
     gap: 2rem;
+   
 
 }
 
@@ -165,6 +169,7 @@ body {
 
     text-align: center;
     text-transform: uppercase;
+
 
 }
 
@@ -244,6 +249,9 @@ body {
 
 
 }
+.opacity{
+    opacity: 1;
+}
 
 .attribution {
 
@@ -254,6 +262,9 @@ body {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+.pointed{
+    cursor: pointer;
 }
 @media screen and (min-width: 1024px) {
     .main{
@@ -352,7 +363,5 @@ body {
         height: 250px;
         
     }
-    .result__span{
-        font-size: 5rem;
-    }
+   
 }

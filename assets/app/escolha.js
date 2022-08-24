@@ -7,6 +7,7 @@ choices.addEventListener('click', evento => {
 
     if(escolha != null && escolhaMaquina != null){
         exibeEscolhas(escolha,escolhaMaquina);
+        
       let resultado = analisaResultado(escolha,escolhaMaquina);
         exibeResultado(resultado);
         exibeScore(score)
@@ -19,8 +20,10 @@ machinePick = document.querySelector('[data-type = machinePick]')
 function exibeEscolhas(escolha,escolhaMaquina){
     
     myPick.classList.replace(myPick.classList[0],`choices__${escolha}`)
-    machinePick.classList.replace(machinePick.classList[0],`choices__${escolhaMaquina}`)
+    
     choices.classList.add('oculto');
     picks.classList.remove('oculto');
-
+    setTimeout(()=>{
+        machinePick.classList.replace(machinePick.classList[0],`choices__${escolhaMaquina}`)
+    },3000)
 }
