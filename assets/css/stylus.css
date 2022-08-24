@@ -22,7 +22,8 @@ body {
     padding: 1rem;
     border: solid hsl(217, 16%, 45%) 2px;
     border-radius: 8px;
-
+    z-index: 1;
+    position: relative;
 }
 
 .header__title {
@@ -107,7 +108,8 @@ body {
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
-   
+    position: relative;
+    z-index: 1;
 }
 
 .choices__paper {
@@ -179,7 +181,7 @@ body {
 
     text-align: center;
     text-transform: uppercase;
-   
+
 
 }
 
@@ -291,7 +293,7 @@ body {
         0px 0px 0px 17px rgb(45, 62, 92),
         0px 0px 0px 45px rgb(41, 58, 88),
         0px 0px 0px 75px rgb(34, 53, 85);
-   
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -416,6 +418,12 @@ body {
 
     .oculto {
         display: none;
+    }
+    .aura{
+        box-shadow:
+        0px 0px 0px 75px rgb(45, 62, 92),
+        0px 0px 0px 150px rgb(41, 58, 88),
+        0px 0px 0px 230px rgb(34, 53, 85);
     }
 }
 
