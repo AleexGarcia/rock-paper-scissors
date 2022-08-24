@@ -107,6 +107,5 @@ Pretendo continuar aperfeiçoando meus conhecimentos em HTML, CSS E JS. Além de
 
 ## Autor
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@AleexGarcia](https://www.frontendmentor.io/profile/AleexGarcia)
+- Linkedin -[alexandre-garcia-dev89]https://www.linkedin.com/in/alexandre-garcia-dev89/
