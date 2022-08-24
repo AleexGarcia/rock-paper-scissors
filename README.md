@@ -9,7 +9,7 @@ This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](h
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [Meu processo](#Meu-processo)
-  - [Construi com](#Construi com)
+  - [Construi com](#Construi-com)
   - [O que eu aprendi](#O-que-eu-aprendi)
   - [Desenvolvimento contínuo](#Desenvolvimento-contínuo)
 - [Autor](#Autor)
@@ -35,7 +35,7 @@ Os usuários devem ser capazes de:
 
 ## Meu-processo
 
-### Construi com
+### Construi-com
 
 - Semantic HTML5 markup
 - CSS custom properties
