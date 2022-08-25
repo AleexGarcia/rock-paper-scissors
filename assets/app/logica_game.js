@@ -52,12 +52,12 @@ function exibeResultado(scoreAux){
         resultado.textContent = 'Draw';
     }
 
-    setTimeout(()=>resultHtml.classList.remove('oculto'),3000);
-    setTimeout(()=> resultHtml.classList.add('opacity'),3500)
+    setTimeout(()=>resultHtml.classList.remove('oculto'),2000);
+    setTimeout(()=> resultHtml.classList.add('opacity'),2500)
 }
 
 function exibeScore(score){
-    setTimeout(()=> scoreHtml.textContent = score, 3500) ;
+    setTimeout(()=> scoreHtml.textContent = score, 2500) ;
 }
 
 const auraYou = document.querySelector('#aura_you');
@@ -72,5 +72,5 @@ function exibeAura(resultado){
       if(resultado === -1){
           auraMachine.classList.add('aura')
       }
-  },3500) 
+  },2500) 
 }

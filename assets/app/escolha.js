@@ -26,5 +26,5 @@ function exibeEscolhas(escolha,escolhaMaquina){
     picks.classList.remove('oculto');
     setTimeout(()=>{
         machinePick.classList.replace(machinePick.classList[0],`choices__${escolhaMaquina}`)
-    },3000)
+    },2000)
 }
